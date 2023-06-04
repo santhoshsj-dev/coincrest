@@ -1,8 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
-
 import Header from './components/Header';
-import HomePage from './pages/Homepage';
+import HomePage from './pages/HomePage';
 import CoinPage from './pages/CoinPage';
 
 function App() {
