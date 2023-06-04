@@ -1,0 +1,27 @@
+.nav{
+    background-color: transparent;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .logo{
+    font-weight: 800;
+    color: var(--primary-color);
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.currency_select{
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.currency_select option{
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,31 @@
+@import url(./styles/Header.css);
+@import url(./styles/Banner.css);
+
+:root {
+  --dark-color: #242424;
+  --primary-color: gold;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background-color: #242424;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+.footer{
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.footer span{
+  color: var(--primary-color);
+}
