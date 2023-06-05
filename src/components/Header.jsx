@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { CryptoState } from "../CryptoContext";
+import { FaGithub } from "react-icons/fa";
 
 function Header() {
   const { currency, setCurrency } = CryptoState();
@@ -11,11 +12,13 @@ function Header() {
         <a onClick={() => navigate(`/`)} className="logo">
           Coin Crest
         </a>
-        <div>
+        <div className="right_side">
           <a
+            target="_blank"
             href="https://github.com/SanthoshSJ-Dev/coincrest"
             class="github_btn"
           >
+            <FaGithub size={20} color="#232323" className="github_icon" />
             <span>Source Code</span>
           </a>
           <select
@@ -25,6 +28,7 @@ function Header() {
           >
             <option value={"USD"}>USD</option>
             <option value={"INR"}>INR</option>
+            <option value={"NGN"}>NGN</option>
           </select>
         </div>
       </nav>
