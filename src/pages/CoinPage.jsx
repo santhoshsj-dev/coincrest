@@ -2,12 +2,12 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import parse from "html-react-parser";
-import CoinInfo from "../components/CoinInfo";
+import CoinChart from "../components/CoinChart";
 import { SingleCoin } from "../config/api";
 import { numberWithCommas } from "../components/CoinTable";
 import { CryptoState } from "../CryptoContext";
 
-import '../styles/CoinInfo.css'
+import '../styles/CoinPage.css'
 
 const CoinPage = () => {
   const { id } = useParams();
@@ -75,7 +75,7 @@ const CoinPage = () => {
           </span>
         </div>
       </div>
-      <CoinInfo coin={coin} />
+      <CoinChart coin={coin} />
     </div>
   );
 };

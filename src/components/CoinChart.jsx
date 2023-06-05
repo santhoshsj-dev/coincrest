@@ -5,9 +5,9 @@ import { HistoricalChart } from "../config/api";
 import { CryptoState } from "../CryptoContext";
 import { chartDays } from "../config/data";
 
-import "../styles/CoinInfo.css";
+import "../styles/CoinPage.css";
 
-const CoinInfo = ({ coin }) => {
+const CoinChart = ({ coin }) => {
   const { currency, symbol } = CryptoState();
   const [days, setDays] = useState(1);
   const chartRef = useRef();
@@ -134,4 +134,4 @@ const CoinInfo = ({ coin }) => {
   );
 };
 
-export default CoinInfo;
+export default CoinChart;
