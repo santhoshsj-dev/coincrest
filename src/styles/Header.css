@@ -1,14 +1,9 @@
 .nav {
     background-color: transparent;
-    padding: 10px 40px;
+    padding: 15px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.sticky {
-    position: sticky;
-    top: 0;
 }
 
 .nav .logo {
@@ -16,14 +11,29 @@
     color: var(--primary-color);
     letter-spacing: 0.5px;
     cursor: pointer;
+    font-size: 1.3rem;
+}
+
+.github_btn {
+    background-color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.github_btn span {
+    font-size: 1rem;
+    color: var(--dark-color);
+    font-weight: 500;
 }
 
 .currency_select {
     cursor: pointer;
     background-color: transparent;
     color: white;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 10px;
+    font-size: 1rem;
 }
 
 .currency_select option {
@@ -33,3 +43,9 @@
     outline: none;
 }
 
+@media only screen and (max-width:600px) {
+    .nav {
+        padding: 15px 30px;
+    }
+    
+}
