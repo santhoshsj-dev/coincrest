@@ -1,0 +1,62 @@
+.coinpage {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    margin-top: 50px;
+}
+
+.sidebar {
+    width: 30%;
+    display: flex;
+    padding: 0px 20px;
+    flex-direction: column;
+    align-items: center;
+    border-right: 2px solid grey;
+}
+
+.chart_coin_name {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.coin_description {
+    text-align: justify;
+}
+
+.coin_marketdata {
+    width: 100%;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.secondary_head {
+    display: flex;
+    flex-direction: row;
+}
+
+.sh_bold {
+    font-weight: 700;
+}
+
+.sh_regular {
+    font-weight: 400;
+}
+
+.coin_chart {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 40px;
+}
+
+.duartion_btns{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+    width: 100%;
+}
