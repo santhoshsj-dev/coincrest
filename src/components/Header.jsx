@@ -10,7 +10,7 @@ function Header() {
     <header>
       <nav className="nav">
         <a onClick={() => navigate(`/`)} className="logo">
-          CoinCrest
+          Coin Crest
         </a>
         <select className="currency_select" value={currency} onChange={(e) => setCurrency(e.target.value)}>
           <option value={"USD"}>USD</option>
