@@ -1,8 +1,13 @@
 .banner {
-    padding: 50px;
+    height: 500px;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #242424, rgba(148, 180, 2, 0)), url(../assets/bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .banner .headline {

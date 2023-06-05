@@ -29,6 +29,11 @@
     text-align: justify;
 }
 
+.coin_description a{
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
 .coin_marketdata {
     width: 100%;
     font-size: 1.3rem;
@@ -62,13 +67,19 @@
 
 .duartion_btns{
     display: flex;
-    margin-top: 20px;
+    margin: 20px 0px;
     justify-content: space-around;
     width: 100%;
 }
 
 /* Mobile Potrait */
 @media only screen and (max-width:600px) {
+    
+    
+}
+
+/* mobile landscape  */
+@media only screen and (max-width:900px) {
     .coinpage {
         flex-direction: column;
         margin-top: 30px;
@@ -84,12 +95,6 @@
         width: 90%;
         padding: 10px 20px;
     }
-    
-}
-
-/* mobile landscape  */
-@media only screen and (min-width:600px) {
-    
 }
 
 /* tablet potrait */
@@ -98,11 +103,23 @@
 }
 
 /* tablet landscape */
-@media only screen and (min-width:992px) {
-   
+@media only screen and (min-width:901px) {
+    .sidebar {
+        width:45%;
+    }
+
+    .coin_chart{
+        width: 55%;
+    }
 }
 
 /* Laptop */
-@media only screen and (min-width:1200px) {
-    
+@media only screen and (min-width:1100px) {
+    .sidebar {
+        width:30%;
+    }
+
+    .coin_chart{
+        width: 70%;
+    }
 }
