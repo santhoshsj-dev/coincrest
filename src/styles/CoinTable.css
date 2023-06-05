@@ -115,7 +115,7 @@ button.active {
     }
 
     .title {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .search_coin {
@@ -125,7 +125,7 @@ button.active {
 
     .coin_table {
         width: 100%;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     .table_head th {
@@ -133,11 +133,11 @@ button.active {
     }
 
     .coin_row {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     .coin_cell {
-        padding: 10px;
+        padding: 15px 7px;
         text-align: left;
     }
 
@@ -151,7 +151,11 @@ button.active {
     }
 
     .right_pad {
-        padding-right: 10px;
+        padding-right: 7px;
+    }
+
+    .pagination {
+        gap: 10px;
     }
 }
 
