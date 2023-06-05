@@ -69,12 +69,14 @@
     }
     
     .sidebar {
-        width: 100%;
+        width: 90%;
         padding: 10px 20px;
+        border-right: 0px;
+        border-right: 1px solid grey;
     }
 
     .coin_chart {
-        width: 100%;
+        width: 90%;
         padding: 10px 20px;
     }
     
