@@ -36,7 +36,7 @@ const CoinPage = () => {
           src={coin?.image.large}
           alt={coin?.name}
           height="150"
-          style={{ marginBottom: 20 }}
+          className="chart_coin_image"
         />
         <h4 className="chart_coin_name">{coin?.name}</h4>
         <div className="coin_description">
