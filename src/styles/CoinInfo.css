@@ -11,16 +11,18 @@
     padding: 0px 20px;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     border-right: 2px solid grey;
 }
 
 .chart_coin_image{
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .chart_coin_name {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     font-size: 2rem;
+    line-height: 0;
 }
 
 .coin_description {
@@ -76,11 +78,6 @@
         width: 90%;
         padding: 10px 20px;
         border-right: 0px;
-        border-bottom: 1px solid grey;
-    }
-
-    .chart_coin_image{
-        margin-bottom: 5px;
     }
 
     .coin_chart {
