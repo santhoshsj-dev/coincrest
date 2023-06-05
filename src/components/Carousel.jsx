@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import AliceCarousel from 'react-alice-carousel';
+import AliceCarousel from "react-alice-carousel";
 import { TrendingCoins } from "../config/api";
 import { CryptoState } from "../CryptoContext";
 import { numberWithCommas } from "./CoinTable";
@@ -24,11 +24,17 @@ const Carousel = () => {
 
     return (
       <Link className="carousel_item" to={`/coins/${coin.id}`}>
-        <img className="coin_image" src={coin?.image} alt={coin.name} height={90}/>
+        <img
+          className="coin_image"
+          src={coin?.image}
+          alt={coin.name}
+          height={90}
+        />
         <span className="coin_symbol">
           {coin?.symbol}
           &nbsp;
-          <span className="profit_loss"
+          <span
+            className="profit_loss"
             style={{
               backgroundColor: profit > 0 ? "green" : "red",
             }}

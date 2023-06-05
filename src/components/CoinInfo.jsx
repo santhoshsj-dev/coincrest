@@ -12,37 +12,45 @@ const CoinInfo = ({ coin }) => {
   const [days, setDays] = useState(1);
   const chartRef = useRef();
   const [chartData, setChartData] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await axios.get(
-        HistoricalChart(coin.id, days, currency, symbol)
-      );
-      const data = response.data.prices.map((price) => ({
-        x: new Date(price[0]),
-        y: price[1],
-      }));
+      try {
+        const response = await axios.get(
+          HistoricalChart(coin.id, days, currency, symbol)
+        );
+        const data = response.data.prices.map((price) => ({
+          x: new Date(price[0]),
+          y: price[1],
+        }));
 
-      const labels = data.map((d) => {
-        const options = days === 1
-          ? { hour: "numeric", minute: "numeric", hour12: true }
-          : { month: "short", day: "numeric", year: "numeric" };
-        return d.x.toLocaleString("en-US", options);
-      });
+        const labels = data.map((d) => {
+          const options =
+            days === 1
+              ? { hour: "numeric", minute: "numeric", hour12: true }
+              : { month: "short", day: "numeric", year: "numeric" };
+          return d.x.toLocaleString("en-US", options);
+        });
 
-      setChartData({
-        labels,
-        datasets: [
-          {
-            label: `Price (${
-              days === 1 ? "Past 24 Hours" : `Past ${days} days`
-            }) in (${symbol}) ${currency}`,
-            data,
-            borderColor: "#EEBC1D",
-            fill: false,
-          },
-        ],
-      });
+        setChartData({
+          labels,
+          datasets: [
+            {
+              label: `Price (${
+                days === 1 ? "Past 24 Hours" : `Past ${days} days`
+              }) in (${symbol}) ${currency}`,
+              data,
+              borderColor: "#EEBC1D",
+              fill: false,
+            },
+          ],
+        });
+
+        setLoading(false);
+      } catch (error) {
+        console.log("Error fetching chart data:", error);
+      }
     };
 
     fetchData();
@@ -95,6 +103,14 @@ const CoinInfo = ({ coin }) => {
     ...chartDayButtonStyle,
     backgroundColor: "#ccc",
   };
+
+  if (loading) {
+    return (
+      <div className="loader_bg">
+        <span className="loader" />
+      </div>
+    );
+  }
 
   return (
     <div className="coin_chart">

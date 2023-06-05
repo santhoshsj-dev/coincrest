@@ -11,7 +11,7 @@ export function numberWithCommas(x) {
 
 export default function CoinsTable() {
   const [coins, setCoins] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(null);
   const [search, setSearch] = useState("");
   const [page, setPage] = useState(1);
 
@@ -49,7 +49,7 @@ export default function CoinsTable() {
         onChange={(e) => setSearch(e.target.value)}
       />
       {loading ? (
-        <div className="linear-progress" style={{ backgroundColor: "gold" }} />
+        <span className="loader"/>
       ) : (
         <table className="coin_table">
           <thead>
