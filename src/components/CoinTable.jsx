@@ -36,6 +36,8 @@ export default function CoinsTable() {
         coin.symbol.toLowerCase().includes(search)
     );
   };
+  
+  console.log(search);
 
   const navigate = useNavigate();
 
@@ -46,7 +48,8 @@ export default function CoinsTable() {
         type="text"
         className="search_coin"
         placeholder="Search For a Crypto Currency"
-        onChange={(e) => setSearch(e.target.value)}
+        value={search.toLocaleUpperCase()}
+        onChange={(e) => setSearch(e.target.value.toLowerCase())}
       />
       {loading ? (
         <span className="loader"/>

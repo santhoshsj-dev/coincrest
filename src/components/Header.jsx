@@ -26,8 +26,8 @@ function Header() {
             value={currency}
             onChange={(e) => setCurrency(e.target.value)}
           >
-            <option value={"USD"}>USD</option>
             <option value={"INR"}>INR</option>
+            <option value={"USD"}>USD</option>
             <option value={"NGN"}>NGN</option>
           </select>
         </div>
