@@ -29,18 +29,3 @@ To get started with Coincrest, follow these simple steps:
 2. Install dependencies: `npm install`
 3. Run the application: `npm start`
 
-## Support
-
-If you find Coincrest helpful, consider supporting the project by buying me a coffee. Your support keeps the project alive and motivates ongoing development.
-
-[![buy-me-a-coffee](https://github.com/santhoshsj-dev/coincrest/assets/105160265/43e7d52e-f740-4fb0-9250-5f240cece0aa)
-](https://www.buymeacoffee.com/santhoshsj)
-
-## Contributions
-
-Contributions are welcome! If you'd like to contribute to Coincrest, please check out our [contribution guidelines](CONTRIBUTING.md).
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
