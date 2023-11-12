@@ -1,4 +1,6 @@
+# Coincrest
 
+Get all the Info regarding your favorite Crypto Currency
 
 ## Overview
 
