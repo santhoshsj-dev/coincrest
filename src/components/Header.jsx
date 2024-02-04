@@ -10,7 +10,7 @@ function Header() {
     <header>
       <nav className="nav">
         <a onClick={() => navigate(`/`)} className="logo">
-          Crypto Hub
+          Coin Crest
         </a>
         <div className="right_side">
           <select

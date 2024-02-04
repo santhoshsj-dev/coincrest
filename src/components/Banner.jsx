@@ -5,7 +5,7 @@ const Banner = () => {
   return (
     <>
       <div className="banner">
-        <h1 className="headline">Crypto Hub</h1>
+        <h1 className="headline">Coin Crest</h1>
         <p className="tagline">
           Get all the Info regarding your favorite Crypto Currency
         </p>
