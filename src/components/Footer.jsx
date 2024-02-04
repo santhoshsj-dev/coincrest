@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <div className='footer'>
-      Developed by <a target='_blank' href='https://github.com/SanthoshSJ-Dev'>Santhosh S</a>
+      Developed by <b>UmaSankari & Logeswari</b>
     </div>
   )
 }
